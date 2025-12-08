@@ -266,10 +266,6 @@ Chose descriptive enum values:
 - `in_progress`: Task currently being worked on
 - `done`: Task completed
 
-## 👤 Author
-
-Yvonne Kam. 
-
 ## 📄 License
 
 This project is created for evaluation purposes as part of a technical assessment.
