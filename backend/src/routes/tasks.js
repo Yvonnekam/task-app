@@ -5,6 +5,15 @@ const { createTaskSchema } = require('../validators');
 
 const router = express.Router();
 
+router.get('/', (req, res) => {
+  db.all('SELECT * FROM tasks ORDER BY createdAt DESC', [], (err, rows) => {
+    if (err) {
+      return res.status(500).json({ status: 500, message: 'Database error' });
+    }
+    res.json(rows);
+  });
+});
+
 router.post('/', (req, res) => {
   const parse = createTaskSchema.safeParse(req.body);
   if (!parse.success) {
