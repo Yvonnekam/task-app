@@ -1,0 +1,5 @@
+
+node_modules/
+dist/
+.D.DS_Store
+tasks.db

@@ -1,0 +1,38 @@
+
+openapi: 3.0.3
+info:
+  title: HMCTS Task API (Starter)
+  version: 1.0.0
+paths:
+  /api/tasks:
+    post:
+      summary: Create a task
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CreateTask'
+      responses:
+        '201':
+          description: Created
+        '400':
+          description: Validation error
+components:
+  schemas:
+    CreateTask:
+      type: object
+      required: [title, status, dueDateTime]
+      properties:
+        title:
+          type: string
+          minLength: 1
+          maxLength: 255
+        description:
+          type: string
+          maxLength: 1000
+        status:
+          type: string
+          enum:          enum: [todo, in_progress, done]
+        dueDateTime:
+          type: string
