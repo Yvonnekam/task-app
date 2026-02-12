@@ -1,4 +1,4 @@
-# HMCTS Task Manager
+# Task Manager
 
 A full-stack task management system for HMCTS caseworkers to track and create tasks.
 
