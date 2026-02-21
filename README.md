@@ -1,6 +1,6 @@
 # Task Manager
 
-A full-stack task management system for HMCTS caseworkers to track and create tasks.
+A full-stack task management system for caseworkers to track and create tasks.
 
 ## 🚀 Live Demo
 
@@ -35,7 +35,7 @@ A full-stack task management system for HMCTS caseworkers to track and create ta
 ## 📁 Project Structure
 
 ```
-hmcts-task-app/
+task-app/
 ├── backend/
 │   ├── src/
 │   │   ├── server.js          # Express server setup
@@ -74,7 +74,7 @@ hmcts-task-app/
 #### 1. Clone the repository
 ```bash
 git clone <your-repo-url>
-cd hmcts-task-app
+cd task-app
 ```
 
 #### 2. Setup Backend
