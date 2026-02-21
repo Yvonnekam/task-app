@@ -2,22 +2,22 @@
 
 A full-stack task management system for caseworkers to track and create tasks.
 
-## 🚀 Live Demo
+## Live Demo
 
 - **Frontend**: http://localhost:5173
 - **Backend API**: http://localhost:3000
 - **API Documentation**: http://localhost:3000/docs
 
-## 📋 Features
+## Features
 
-- ✅ Create tasks with title, description, status, and due date/time
-- ✅ Input validation with helpful error messages
-- ✅ Data persistence using SQLite database
-- ✅ RESTful API with proper error handling
-- ✅ Responsive React frontend
-- ✅ Comprehensive unit tests for backend and frontend
+- Create tasks with title, description, status, and due date/time
+- Input validation with helpful error messages
+- Data persistence using SQLite database
+- RESTful API with proper error handling
+- Responsive React frontend
+- Comprehensive unit tests for backend and frontend
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Backend
 - **Language**: Node.js (JavaScript)
@@ -32,7 +32,7 @@ A full-stack task management system for caseworkers to track and create tasks.
 - **Build Tool**: Vite
 - **Testing**: Vitest + React Testing Library
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 task-app/
@@ -63,7 +63,7 @@ task-app/
     └── package.json
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -214,7 +214,7 @@ CREATE TABLE tasks (
 );
 ```
 
-## ✅ Validation Rules
+## Validation Rules
 
 1. **Title**: Required, 1-255 characters
 2. **Description**: Optional, max 1000 characters
@@ -224,19 +224,19 @@ CREATE TABLE tasks (
    - Must be in the future
    - Frontend uses `datetime-local` input for user convenience
 
-## 🧪 Testing
+## Testing
 
 ### Backend Tests Cover:
-- ✅ Successful task creation
-- ✅ Invalid status rejection
-- ✅ Past due date rejection
-- ✅ Response format validation
+- Successful task creation
+- Invalid status rejection
+- Past due date rejection
+- Response format validation
 
 ### Frontend Tests Cover:
-- ✅ Component rendering
-- ✅ UI element presence
+- Component rendering
+- UI element presence
 
-## 🔒 Error Handling
+## Error Handling
 
 The application implements comprehensive error handling:
 
@@ -246,7 +246,7 @@ The application implements comprehensive error handling:
 4. **Database Error Handling**: Try-catch blocks with appropriate error responses
 5. **Network Error Handling**: Frontend catches and displays fetch errors
 
-## 🎯 Design Decisions
+## Design Decisions
 
 ### Backend
 - **SQLite**: Lightweight, file-based database perfect for this use case
@@ -266,13 +266,13 @@ Chose descriptive enum values:
 - `in_progress`: Task currently being worked on
 - `done`: Task completed
 
-## 📄 License
+## License
 
 This project is created for evaluation purposes as part of a technical assessment.
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend won't start
 - Ensure port 3000 is not in use
@@ -293,6 +293,6 @@ This project is created for evaluation purposes as part of a technical assessmen
 - Check that CORS is enabled in server.js
 - Ensure frontend is making requests to correct URL
 
-## 📞 Support
+## Support
 
 For questions or issues, please create an issue in the repository or contact the development team.
